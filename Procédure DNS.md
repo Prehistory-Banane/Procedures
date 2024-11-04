@@ -49,8 +49,7 @@
 #### Étape 5 : Enregistrement CNAME
 - Dans le **DNS Manager**, dérouler **Forward Lookup Zones**, puis clic droit sur `nom.lan` et cliquer sur **New alias (CNAME)**.
 - Dans **New Host** 
-  - Choisir un nom pour l'alias, dans l'idéal le même que la partie avant le `.lan` `nom.lan`, 
-  - Entrer l'adresse IP de l'hôte, par exemple `172.20.0.101`.
-  - Cocher **Creat associated pointer (PTR) record**, 
-  - puis cliquer sur **Add Host**.
-
+  - Choisir un nom pour l'alias, dans l'idéal le même que la partie avant le `.lan` de `nom.lan`, 
+  - Dans **Fully qualified domain Name (FQDN) for target host**, cliquer sur **Browse**.
+  - Double-cliquer plusieurs sous **Records** jusqu'à trouver le serveur enregistré, 
+  - puis cliquer sur **Ok**.
