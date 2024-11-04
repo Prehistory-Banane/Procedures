@@ -21,7 +21,7 @@
 - Dans le **DNS Manager**, clic droit sur **Forward Lookup Zones**, puis cliquer sur **New zone**.
 - Dans le **New Zone Wizard** 
   - cliquer sur **Next** deux fois, 
-  - puis choisir un nom en `nom.lan` dans **Zone Name**, 
+  - puis choisir un nom en `nom.lan` comme par exemple `wilder.lan` dans **Zone Name**, 
   - puis cliquer sur **Next** deux fois 
   - et enfin sur **Finish**.
 
@@ -36,6 +36,7 @@
   - puis cliquer sur **Next** trois fois 
   - et enfin sur **Finish**.
 
+
 #### Étape 5 : Enregistrement A ou AAAA
 - Dans le **DNS Manager**, dérouler **Forward Lookup Zones**, puis clic droit sur `nom.lan` et cliquer sur **New Host (A or AAAA)**.
 - Dans **New Host** 
@@ -49,7 +50,7 @@
 #### Étape 5 : Enregistrement CNAME
 - Dans le **DNS Manager**, dérouler **Forward Lookup Zones**, puis clic droit sur `nom.lan` et cliquer sur **New alias (CNAME)**.
 - Dans **New Host** 
-  - Choisir un nom pour l'alias, dans l'idéal le même que la partie avant le `.lan` de `nom.lan`, 
+  - Choisir un nom pour l'alias, sous la forme `dns.nom.lan` comme par exemple `dns.wilder.lan`, 
   - Dans **Fully qualified domain Name (FQDN) for target host**, cliquer sur **Browse**.
   - Double-cliquer plusieurs sous **Records** jusqu'à trouver le serveur enregistré, 
   - puis cliquer sur **Ok**.
