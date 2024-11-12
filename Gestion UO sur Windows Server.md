@@ -21,7 +21,7 @@
   - Cliquer sur New
   - Cliquer User
 
-- Dans la fenêtre New Objext - User
+- Dans la fenêtre New Object - User
   - Lui donner un prénom et un nom, ici "Gege" et "Slide27"
   - Choisir ses identifiants de connexion, ici "gege.slide27@wilders.lan"
   - Cliquer sur Next
