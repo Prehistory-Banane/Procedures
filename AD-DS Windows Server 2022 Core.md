@@ -64,6 +64,8 @@
 
 ## Étape 4 : Promouvoir le serveur en contrôleur de domaine
 
+*Pas sûr que cette étape soit obligatoire, mais avant de continuer, se déconnecter sur le Serveur Core, et se reconnecter sur pharmgreen/Administrator.*
+
 ### 4.1 Lancer la promotion
 1. Exécutez la commande suivante pour promouvoir le serveur en tant que contrôleur de domaine :
     ```powershell
@@ -73,7 +75,8 @@
     - `InstallDns` : Ajoute un service DNS sur le nouveau contrôleur de domaine si nécessaire.
     - `SafeModeAdministratorPassword` : Mot de passe pour le mode restauration AD.
 
-2. Attendez que la configuration se termine. Le serveur redémarrera automatiquement.
+2. Dans la fenêtre qui s'ouvre pour valider la procédure, dans la partie ID, bien mettre "pharmgreen\Administrator" et non pas juste "Administrator"
+3. Attendez que la configuration se termine. Le serveur redémarrera automatiquement.
 
 ### 4.2 Vérifiez la promotion
 1. Confirmez que le serveur est devenu un contrôleur de domaine :
