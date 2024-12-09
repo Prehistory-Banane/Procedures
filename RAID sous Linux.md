@@ -76,8 +76,8 @@
 `sudo mdadm --detail /dev/md0`
 
 ### Formatage et montage du RAID
-`sudo mkfs.ext4 /dev/md0 -L "PersonalData"`
-`sudo mkdir -p /home/yohann/Data-RAID5`
+`sudo mkfs.ext4 /dev/md0 -L "PersonalData"`  
+`sudo mkdir -p /home/yohann/Data-RAID5`  
 `sudo mount /dev/md0 /home/yohann/Data-RAID5/`
 
 ### Configuration du montage
