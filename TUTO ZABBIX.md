@@ -125,7 +125,8 @@ DBPassword=Azerty1*
 ```sh
 1 systemctl restart zabbix-server zabbix-agent nginx php8.2-fpm
 2 systemctl enable zabbix-server zabbix-agent nginx php8.2-fpm
-```
+```  
+![17](https://github.com/user-attachments/assets/f035c1f9-017e-417f-ba47-f7b8bff907fb)
 
 
 
