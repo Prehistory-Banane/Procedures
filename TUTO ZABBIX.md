@@ -9,7 +9,7 @@ Zabbix est une solution open-source de supervision qui permet de surveiller les 
 - Un Windows 11 où installer l'agent Zabbix.
 
 
-## Installation d'un serveur web avec Nginx
+## Étape 1 - Installation d'un serveur web avec Nginx
 
 Commençons par installer le paquet Nginx, mais avant cela mettons à jour le cache de paquets sur notre machine :
 ```sh
@@ -43,7 +43,7 @@ Test depuis un client pour vérifier que tout fonctionne en tapant l'adresse IP 
 ![4](https://github.com/user-attachments/assets/a781e55d-855a-4918-a04e-3b54ca95f12b)
 
 
-## 🔬 Installation du serveur Zabbix
+## 🔬 Étape 2 - Installation du serveur Zabbix
 1. Installation du dépôt de Zabbix dans le système :
 ```sh
 1 wget https://repo.zabbix.com/zabbix/7.2/release/debian/pool/main/z/zabbix-release/zabbix-release_latest_7.2+debian12_all.deb
@@ -129,8 +129,13 @@ DBPassword=Azerty1*
 ![17](https://github.com/user-attachments/assets/f035c1f9-017e-417f-ba47-f7b8bff907fb)
 
 
+## 🔬 Étape 3 - Configuration de Zabbix depuis la WUI
+1. Depuis un client tape l'adresse de ton serveur dans un navigateur en ajoutant le port d'écoute `X.X.X.X:8080`
+
+2. A partir des boutons `Next step`, on peut configurer le serveur. A renseigner entre autres :
+- Le mdp de la base de donnée
+- Le nom du serveur Zabbix
+- le fuseau horaire du serveur (UTC+1 si on est à Paris par exemple)
 
 
-
-
-
+## 🔬 Étape 4 - Installation et configuration de l'Agent Zabbix
