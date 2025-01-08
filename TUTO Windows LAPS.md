@@ -27,7 +27,7 @@ Import-Module LAPS
 Update-LapsADSchema -Verbose
 ```
 
-Le fait d'ajouter le paramètre **"-Verbose"** est facultatif, mais cela permet d'obtenir plus de détails dans la sortie de la commande. Vous verrez passer quelques lignes qui montrent que le **schéma Active Directory a été mis à jour** : la class "computer" va bénéficier d'attributs supplémentaires.
+Le fait d'ajouter le paramètre **"-Verbose"** est facultatif, mais cela permet d'obtenir plus de détails dans la sortie de la commande. Vous verrez passer quelques lignes qui montrent que le **schéma Active Directory a été mis à jour** : la class "computer" va bénéficier d'attributs supplémentaires.  
 ![1](https://github.com/user-attachments/assets/12eedc23-8927-4d04-b3bc-7987e85fa4e5)
 
 Vous pouvez fermer la console PowerShell s'il n'y a pas eu d'erreur apparente.
@@ -162,4 +162,5 @@ Dans la nouvelle fenêtre Group Policy Management Editor qui vient de s'ouvrir :
 **Votre nouvelle GPO est prête et les comptes administrateurs intégrés de vos postes clients seront maintenant activés et donc accessible grâce au mot de passe géré par Windows LAPS !**
 
 
+[Sources : _cette procédure est basée sur un tuto d'[IT-Connect](https://www.it-connect.fr/tuto-configurer-windows-laps-active-directory/), auquel j'ai apporté des modifications en fonction de mes besoins et des problèmes rencontrés._]
 
