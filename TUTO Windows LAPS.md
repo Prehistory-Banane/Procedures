@@ -156,8 +156,12 @@ Dans la nouvelle fenêtre Group Policy Management Editor qui vient de s'ouvrir :
 - Déroulez **Security Settings**
 - Déroulez **Local Policy**
 - Cliquez sur **Security Options**
-- Dans le panneau de droite cliquez sur "_Accounts: Administrator account status Properties_"
+- Dans le panneau de droite double-cliquez sur "_Accounts: Administrator account status_"  
+![18](https://github.com/user-attachments/assets/8bef6573-889a-4282-9340-a2845411c6a6)
+
 - Dans la nouvelle fenêtre, cochez la case "_Define this policy setting_" et vérifiez que c'est bien "_Enabled_" qui est coché, puis cliquez sur ok.
+![19](https://github.com/user-attachments/assets/370076b2-722f-42e2-8a69-bcdc2620b890)
+
 
 **Votre nouvelle GPO est prête et les comptes administrateurs intégrés de vos postes clients seront maintenant activés et donc accessible grâce au mot de passe géré par Windows LAPS !**
 
