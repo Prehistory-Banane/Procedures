@@ -46,8 +46,8 @@ Test depuis un client pour vérifier que tout fonctionne en tapant l'adresse IP 
 ## 🔬 Installation du serveur Zabbix
 1. Installation du dépôt de Zabbix dans le système :
 ```sh
-wget https://repo.zabbix.com/zabbix/7.2/release/debian/pool/main/z/zabbix-release/zabbix-release_latest_7.2+debian12_all.deb
-dpkg -i zabbix-release_latest_7.2+debian12_all.deb
+1 wget https://repo.zabbix.com/zabbix/7.2/release/debian/pool/main/z/zabbix-release/zabbix-release_latest_7.2+debian12_all.deb
+2 dpkg -i zabbix-release_latest_7.2+debian12_all.deb
 ```  
 ![5](https://github.com/user-attachments/assets/0084bf85-ec1c-4339-8ec3-bed7f10d626c)  
 ![6](https://github.com/user-attachments/assets/c907b36f-96d4-4b61-a0d4-c8eeb5fa185e)
@@ -78,5 +78,58 @@ apt install mariadb-server
 systemctl status mysql
 ```  
 ![11](https://github.com/user-attachments/assets/c54b1c01-2ac1-4848-87b6-38a522541ee7)
+
+3. Création et configuration de la base de données :
+```sh
+1 mysql -uroot -p
+2 password (ici Azerty1*)
+3 MariaDB> create database zabbix character set utf8mb4 collate utf8mb4_bin;
+4 MariaDB> create user zabbix@localhost identified by 'Azerty1*';
+5 MariaDB> grant all privileges on zabbix.* to zabbix@localhost;
+6 MariaDB> set global log_bin_trust_function_creators = 1;
+7 MariaDB> quit;
+```  
+![12](https://github.com/user-attachments/assets/66c8e86e-0219-4a75-b086-04d32350ba95)
+
+
+4. Importation du schéma et des données :
+```sh
+zcat /usr/share/zabbix/sql-scripts/mysql/server.sql.gz | mysql --default-character-set=utf8mb4 -uzabbix -p zabbix
+```  
+![13](https://github.com/user-attachments/assets/a813eb4a-7ebe-4dfc-ae08-15c52fc07d34)
+
+5. Désactivation de la possibilité de modifier la configuration de la BD par des acteurs malveillants :
+```sh
+1 mysql -uroot -p
+2 password
+3 MariaDB> set global log_bin_trust_function_creators = 0;
+4 MariaDB> quit;
+```  
+![14](https://github.com/user-attachments/assets/8dd3e817-14b3-44fb-ab55-6afe0379cf28)
+
+6. Edition du fichier de configuration de la BD du serveur Zabbix dans `/etc/zabbix/zabbix_server.conf` :
+```sh
+DBPassword=Azerty1*
+```  
+![15](https://github.com/user-attachments/assets/fd55303e-9609-40c5-93e2-b41686acfc95)
+
+7. Configuration de PHP pour accéder au frontend dans `/etc/zabbix/nginx.conf` :
+```sh
+1 listen 8080;
+2 server_name <ici tu rentreras l'adresse IPv4 de ta machine>;
+```  
+![16](https://github.com/user-attachments/assets/be588f92-a55f-4afb-bbf2-0740ff2262c3)
+
+
+8. Démarrage du serveur et des processus de l'agent :
+```sh
+1 systemctl restart zabbix-server zabbix-agent nginx php8.2-fpm
+2 systemctl enable zabbix-server zabbix-agent nginx php8.2-fpm
+```
+
+
+
+
+
 
 
