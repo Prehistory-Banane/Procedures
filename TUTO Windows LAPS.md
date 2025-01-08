@@ -131,4 +131,35 @@ Par défaut, Windows LAPS va **gérer le compte "Administrateur" natif et intég
 **Au final, notre stratégie de groupe est configurée de cette façon :**  
 ![16](https://github.com/user-attachments/assets/eea23bbc-2c00-41c1-a87c-0badc855e34d)
 
+**La stratégie de groupe est prête, il ne reste plus qu'à faire une actualisation des GPO sur un poste, afin de tester.**
+```sh
+gpupdate /force
+```
+
+Au redémarrage, la machine "PC-01" va appliquer la stratégie de groupe, changer le mot de passe du compte administrateur géré par Windows LAPS et le stocker dans l'annuaire.
+
+
+## III. Problème avec la connexion au compte administrateur sur le poste client
+
+Quand vous essayez de vous connecter sur votre poste client avec le compte administrateur et son mot de passe LAPS, il est possible que vous obteniez le message suivant "_Your account has been disabled. please see your system administrator_".
+Sur Windows 10, le compte administrateur intégré (built-in Administrator Account) est désactivé par défaut. Il est donc nécessaire de l'activer pour pouvoir s'y connecter.
+LAPS gère uniquement les mots de passe et ne s'occupe pas de l'activation ou de la désactivation du compte administrateur intégré.
+
+### Création d'une GPO pour activer les comptes administrateurs intégrés de vos postes clients.
+
+Dans la fenêtre Group Policy Management, créez une nouvelle GPO dans l'OU qui contient vos postes clients (ici "_Computer-client_"), donnez-lui un nom clair afin de vous y retrouver facilement (ici "_Activation du compte Admin intégré_").  
+Ensuite, faites un clic-droit sur cette nouvelle GPO et cliquez sur "_Edit_".  
+
+Dans la nouvelle fenêtre Group Policy Management Editor qui vient de s'ouvrir :
+- Déroulez **Computer Configuration**
+- Déroulez **Windows Settings**
+- Déroulez **Security Settings**
+- Déroulez **Local Policy**
+- Cliquez sur **Security Options**
+- Dans le panneau de droite cliquez sur "_Accounts: Administrator account status Properties_"
+- Dans la nouvelle fenêtre, cochez la case "_Define this policy setting_" et vérifiez que c'est bien "_Enabled_" qui est coché, puis cliquez sur ok.
+
+**Votre nouvelle GPO est prête et les comptes administrateurs intégrés de vos postes clients seront maintenant activés et donc accessible grâce au mot de passe géré par Windows LAPS !**
+
+
 
