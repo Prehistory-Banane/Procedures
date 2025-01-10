@@ -190,20 +190,38 @@ Concernant la vidéo :
 - Quand tu seras à l\'étape Alerts/Media types inutile de créer un nouveau type de media en cliquant sur Create media type. Il te suffit d\'activer le \"Media type\" Email déjà existant et de le configurer comme expliquer.
 ```
 
-En complément de la vidéo, voici un aperçu des étapes à suivre :
-![37](https://github.com/user-attachments/assets/af10a217-9110-4e5d-980e-11e75b6649dc)
-![50](https://github.com/user-attachments/assets/93d54963-d855-4ed9-b4ba-f07cbe182c92)
-![51](https://github.com/user-attachments/assets/5a324962-a161-4140-9afe-06ca553a2702)
+3. En complément de la vidéo, voici un aperçu des étapes à suivre :
+- Dans le champ `Alerts`, clique sur `Media Types`, puis sur `Create type` en haut à droite,   
+![52](https://github.com/user-attachments/assets/5ab7f850-1da9-486e-83a1-6132bf419608)
+- Complète les champs comme ceci, puis clique sur l'onglet `Message temapltes`, [pour le mot de passe, ça se passe dans quelques étapes]  
+![37](https://github.com/user-attachments/assets/5822c060-60a3-442c-a8b9-cc48836304fc)
+- Clique sur `Add`, puis sélectionne `Problem started`, puis clique sur `Add`,  
+![50](https://github.com/user-attachments/assets/186f680b-5cb9-4771-bb56-74082e481b84)
+- Clique de nouveau sur `Add`puis sélectionne `Problem recovery`, puis clique sur `Add`, et enfin clique sur `Update`, reviens sur l'onglet `Media type`  
+![51](https://github.com/user-attachments/assets/e9b1f598-7f97-4aba-bfae-bd7e3401cbf3)
+- Rends-toi dans les paramètres de ton adresse Gmail, clique sur `Sécurité`, tape `application passwords` dans la barre de recherche, clique sur `se connecter avec des mots de passe d'application`,  
 ![39](https://github.com/user-attachments/assets/517bcdb8-e244-411c-934a-5155db7731ce)
+- Déroule la rubrique d'Aide sur la droite et clique sur `Créez et gérez les mots de passe de vos applications` [Attention, la double authentification doit être activée sur ce compte],  
 ![40](https://github.com/user-attachments/assets/a274155f-8c82-41c2-809d-0c95ee93b19d)
+- Copie le mot de passe d'application généré et colle-le dans l'encart `Password` de ta fenêtre `New Media type`, et enfin clique sur `Add`,  
 ![38](https://github.com/user-attachments/assets/d2c9cec8-1816-4a76-9a8b-7a2100d6f12d)
+- Dans le champ `Users`, clique sur `Users`, puis sur `Admin`,  
 ![41](https://github.com/user-attachments/assets/45f190ab-f258-4917-ae5d-1a76fde1ac36)
+- Clique sur l'onglet `Media`, puis sur `Add`,  
 ![42](https://github.com/user-attachments/assets/42d85453-4223-4bad-90a1-a3d2f063b600)
+- rentre l'adresse mail que tu as utilisé dans `New Media type`, déoche les cases `Not classified, Information et Warning`, puis clique sur `Add`,  
 ![43](https://github.com/user-attachments/assets/4bc69f3d-0f81-40c6-b358-4663e349675a)
+- De retour sur la fenêtre précédente, clique-bien sur `Update` pour que cette étape soit prise en compte,
+![53](https://github.com/user-attachments/assets/33bef630-72b1-42b7-84e6-9dd8f9f126bf)
+- Dans le champs `Alerts`, clique sur `Actions`, puis sur `Trgger actions`, puis sur `Report problems to Zabbix administrators`,  
 ![44](https://github.com/user-attachments/assets/e3c3c6d3-3617-4078-9872-33d7b8015713)
+- Clique sur `Add`,  
 ![45](https://github.com/user-attachments/assets/442b149d-8e9c-4b4e-99fa-b36e2eb82f15)
+- Sélectionne `Trigger severity` dans le menu déroulant, clique sur `High`, puis sur `Add`,  
 ![46](https://github.com/user-attachments/assets/e085a646-161f-4f9e-9614-d848e5cae570)
+- Recommance l'opération en sélectionnant `Disaster`, puis `Average`, puis clique sur `Update`,  
 ![47](https://github.com/user-attachments/assets/83cf4618-c268-470b-8c42-122d77569a19)
+
 
 
 
