@@ -190,6 +190,25 @@ Concernant la vidéo :
 - Quand tu seras à l\'étape Alerts/Media types inutile de créer un nouveau type de media en cliquant sur Create media type. Il te suffit d\'activer le \"Media type\" Email déjà existant et de le configurer comme expliquer.
 ```
 
+En complément de la vidéo, voici un aperçu des étapes à suivre :
+![37](https://github.com/user-attachments/assets/af10a217-9110-4e5d-980e-11e75b6649dc)
+![50](https://github.com/user-attachments/assets/93d54963-d855-4ed9-b4ba-f07cbe182c92)
+![51](https://github.com/user-attachments/assets/5a324962-a161-4140-9afe-06ca553a2702)
+![39](https://github.com/user-attachments/assets/517bcdb8-e244-411c-934a-5155db7731ce)
+![40](https://github.com/user-attachments/assets/a274155f-8c82-41c2-809d-0c95ee93b19d)
+![38](https://github.com/user-attachments/assets/d2c9cec8-1816-4a76-9a8b-7a2100d6f12d)
+![41](https://github.com/user-attachments/assets/45f190ab-f258-4917-ae5d-1a76fde1ac36)
+![42](https://github.com/user-attachments/assets/42d85453-4223-4bad-90a1-a3d2f063b600)
+![43](https://github.com/user-attachments/assets/4bc69f3d-0f81-40c6-b358-4663e349675a)
+![44](https://github.com/user-attachments/assets/e3c3c6d3-3617-4078-9872-33d7b8015713)
+![45](https://github.com/user-attachments/assets/442b149d-8e9c-4b4e-99fa-b36e2eb82f15)
+![46](https://github.com/user-attachments/assets/e085a646-161f-4f9e-9614-d848e5cae570)
+![47](https://github.com/user-attachments/assets/83cf4618-c268-470b-8c42-122d77569a19)
+
+
+
+
+
 3. Création d'une alerte spécifique lié à l'utilisation de notre RAM :
 - Dans le menu `Data collection/Hosts` :
   - Clique sur `Items` qui se trouve sur la ligne de ton client.  
@@ -213,7 +232,7 @@ Concernant la vidéo :
   - Sélectionne dans la liste ton item `Alerte RAM`.  
 ![32](https://github.com/user-attachments/assets/f53bd30d-1e35-4aa2-adff-c4534b35b6d6)
   - Dans `Result` sélectionne `>=` puis la valeur qui va te permettre de déclencher l'alerte.  
-![33](https://github.com/user-attachments/assets/93cf8fef-b9bb-4483-8ffe-345c6bbd13f2)
+![33](https://github.com/user-attachments/assets/02fc0353-64f9-4da3-9716-d31dd608ec52)
   - Clique sur `Insert` puis `Add` en bas de la fenêtre.  
 ![34](https://github.com/user-attachments/assets/d2d65738-3313-4457-b016-ff2bed313005)
 
