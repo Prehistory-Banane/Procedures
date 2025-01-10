@@ -186,8 +186,8 @@ DBPassword=Azerty1*
 Concernant la vidéo :
 
 - Il te faudra surement activer l\'authentification à 2 facteurs dans ton web client de messagerie pour permettre à Zabbix d\'envoyer des notifications au moyen de ton adresse mail.
-- Tu n\'as pas besoin d\'activer \"IMAP access\" à priori comme expliqué dans la vidéo.
-- Quand tu seras à l\'étape Alerts/Media types inutile de créer un nouveau type de media en cliquant sur Create media type. Il te suffit d\'activer le \"Media type\" Email déjà existant et de le configurer comme expliquer.
+- Tu n\'as, à priori, pas besoin d\'activer \"IMAP access\" comme expliqué dans la vidéo.
+- Quand tu seras à l\'étape Alerts/Media types tu peux t'abstenir de créer un nouveau type de media en cliquant sur Create media type. Il te suffit d\'activer le \"Media type\" Email déjà existant et de le configurer comme expliqué.
 ```
 
 3. En complément de la vidéo, voici un aperçu des étapes à suivre :
@@ -209,7 +209,7 @@ Concernant la vidéo :
 ![41](https://github.com/user-attachments/assets/45f190ab-f258-4917-ae5d-1a76fde1ac36)
 - Clique sur l'onglet `Media`, puis sur `Add`,  
 ![42](https://github.com/user-attachments/assets/42d85453-4223-4bad-90a1-a3d2f063b600)
-- rentre l'adresse mail que tu as utilisé dans `New Media type`, déoche les cases `Not classified, Information et Warning`, puis clique sur `Add`,  
+- Rentre l'adresse mail que tu as utilisé dans `New Media type`, déoche les cases `Not classified, Information et Warning`, puis clique sur `Add`,  
 ![43](https://github.com/user-attachments/assets/4bc69f3d-0f81-40c6-b358-4663e349675a)
 - De retour sur la fenêtre précédente, clique-bien sur `Update` pour que cette étape soit prise en compte,
 ![53](https://github.com/user-attachments/assets/33bef630-72b1-42b7-84e6-9dd8f9f126bf)
