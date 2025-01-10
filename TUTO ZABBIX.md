@@ -252,6 +252,6 @@ Concernant la vidéo :
   - Dans `Result` sélectionne `>=` puis la valeur qui va te permettre de déclencher l'alerte.  
 ![33](https://github.com/user-attachments/assets/02fc0353-64f9-4da3-9716-d31dd608ec52)
   - Clique sur `Insert` puis `Add` en bas de la fenêtre.  
-![34](https://github.com/user-attachments/assets/d2d65738-3313-4457-b016-ff2bed313005)
+![34](https://github.com/user-attachments/assets/5d7c2cae-7b03-4b53-b0e3-9aadf7c9eefa)
 
 5. Ouvre quelques applications sur ton client pour solliciter la RAM au niveau que tu as défini pour l'alerte et réceptionne ton mail. Quand l'utilisation de ta RAM va redescendre tu vas recevoir dans la foulée un mail de Zabbix t'indiquant que le problème est résolu.
