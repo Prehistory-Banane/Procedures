@@ -20,7 +20,7 @@
 | PE | Physical Extends | Unité d'allocation d'un VG |
 | PV | Physical Volume | Un périphérique de stockage : 1 partition/disque complet/volume RAID/stockage distant (SAN) |
 | PRA | Plan de Reprise d'Activité | processus de maintenance ou de rétablissement d'infrastructures et de systèmes vitaux |
-| RAID | Redundant Array of Independent/Inexpensive Disks | Technique de virtualisation du stockage |
+| RAID | Redundant Array of Independent/Inexpensive Disks | Technique de virtualisation du stockage permettant de répartir des données sur plusieurs support de stockage |
 | RAID 0 | Striping / Entrelaçage par bande | Données découpées et réparties sur n disques / performance+ taille+ fiabilité- |
 | RAID 1 | Mirroring / Disques miroirs | Données copiées sur n disques / performances= taille- (perte de n-1 disque) fiabilité+ (tolère n-1 pannes) |
 | RAID 4 | Agrégation par bande avec parité | Striping sur n disques + 1 disque parité / perofrmance+ (proportionnel n-1 disques) taille+ fiabilité+ (tolère 1 panne) long |
